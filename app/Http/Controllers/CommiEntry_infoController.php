@@ -97,7 +97,7 @@ class CommiEntry_infoController extends AppBaseController
         // 通知メールCC送信先取得
         $gm_email = GmAddress::where('uuid', $id)->first();
 
-        return view('admin_entry_infos.show', compact('entryInfo', 'gm_email'));
+        return view('commi_entry_infos.show', compact('entryInfo', 'gm_email'));
     }
 
     /**
